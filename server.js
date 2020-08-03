@@ -21,40 +21,6 @@ const Company =  mongoose.model("Company", compSchema);
 
 
 
-const comp1 = new Company({
-    code: 21,
-    name: "Microsoft",
-    address: "US",
-    isActive: 1
-});
-
-const comp2 = new Company({
-    code: 15,
-    name: "Google",
-    address: "Egypt",
-    isActive: 1
-});
-
-const comp3 = new Company({
-    code: 54,
-    name: "Apple",
-    address: "India",
-    isActive: 0
-});
-
-
-
-// Company.insertMany([comp1, comp2, comp3], function(err){
-//     if(err){
-//     console.log(err);
-// }
-// else{
-// console.log("Successfully added to the database");
-// }
-// });
-
-
-
 app.get('/', (req, res) => {
     res.json({"message": "Welcome to Company Application."});
 });
