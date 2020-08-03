@@ -1,1 +1,1 @@
-# comapny-node-mongo-backend-app
+# company-node-mongo-backend-app
